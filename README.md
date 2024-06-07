@@ -1,36 +1,21 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Bidding-UI
 
-## Getting Started
+This is a assingment project UI part I have created it to test socket.io connection and web socket working.
 
-First, run the development server:
+## Step to Setup locally
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Clone the repository.
+- Run `npm i` in the command line(CMD)
+- Now, run `npm run dev` to run the server
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Working of Project
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Click on `Make a Bid` , now a form open to you. You connected to the web socket connection with the backend.
+- Run the backend server [api](https://github.com/faisal1025/bidding-API) go to postman generate the new JWT token (token will expires after 10h)
+- Come inside the frontend code `bid` folder `page.tsx` and in the `token` variable put the generated token.
+- Now, make a bid enter any amount eg. 8000.00 no creating the bid a Web Socket is connected and a message notfied to all clients.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+Link to backend Click [Here](https://github.com/faisal1025/bidding-API)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
